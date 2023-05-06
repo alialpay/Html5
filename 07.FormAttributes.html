@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Attributes</title>
+</head>
+<body>
+    <h2>Auto Complete</h2>
+    <!-- form>input+buton[type=submit]{Gönder} -->
+    <!-- id="name" yapınca auto complete özelliği oluyor -->
+    <!-- <form autocomplete="off" veya enctype="" şeklinde attribute kullanımları var
+     kullanıcıya dosya göndermek istiyorsan enctype="multipart/form-data" kullanmalısın   
+    <form novalidate 
+    -->
+
+
+    <form target="_blank">
+        <input required type="text" id="ad">
+        <br>
+        <br>
+        <input required type="text" id="soyad">
+        <br>
+        <br>
+        <button type="submit" value>Gönder</button>
+    </form>
+</body>
+</html>
+
+
+<!-- 
+    
+"enctype" (encoding type) web formalarının sunucuya veri gönderirken hangi karakter kodlama yönteminin kullanılacağını belirten bir HTML özniteliğidir. Bir form, kullanıcının web sitesindeki bir alanı doldurup gönderdiği bir iletişim aracıdır ve kullanıcının girdiği veriler sunucuya gönderilir. Form gönderildiğinde, sunucu belirtilen "enctype" tipine göre form verilerini kodlar.
+
+Web formları için en yaygın kullanılan iki "enctype" tipi şunlardır:
+
+"application/x-www-form-urlencoded": Bu varsayılan değerdir ve en yaygın kullanılanıdır. Form verileri, URL kodlama yöntemi kullanılarak kodlanır ve sunucuya gönderilir. Bu yöntem, web tarayıcıları ve sunucuları tarafından iyi anlaşılır ve genellikle sorunsuz bir şekilde çalışır.
+
+"multipart/form-data": Bu yöntem, büyük dosyalar veya resimler gibi binary verileri göndermek için kullanılır. Veriler, MIME kodlama yöntemi kullanılarak kodlanır ve sunucuya gönderilir.
+
+"enctype" özelliği, formun sunucuya doğru bir şekilde gönderilmesi için önemlidir ve doğru kodlama yöntemi seçilmesi önemlidir.
+
+ -->
+
+
+<!-- 
+    Global HTML öznitelikleri, herhangi bir HTML etiketi için geçerli olan özniteliklerdir. Bu öznitelikler, tüm HTML etiketlerinde kullanılabilen ortak özellikleri ifade eder. İşte en yaygın kullanılan global HTML öznitelikleri:
+
+1. `class`: Bir öğe için bir veya daha fazla sınıf adı belirtir.
+2. `id`: Bir öğe için benzersiz bir tanımlayıcı belirtir.
+3. `style`: Bir öğenin CSS stili tanımlar.
+4. `title`: Bir öğe için açıklama veya ek açıklama sağlar.
+5. `accesskey`: Bir öğenin erişim tuşunu tanımlar.
+6. `contenteditable`: Bir öğenin düzenlenebilir olup olmadığını belirtir.
+7. `data-*`: Öğe için özel veri özellikleri tanımlar.
+8. `dir`: Bir öğenin metin yönünü belirler.
+9. `hidden`: Bir öğenin gizlenmesini sağlar.
+10. `lang`: Bir öğenin dil kodunu belirler.
+11. `tabindex`: Bir öğenin klavye tab düzenindeki sırasını belirler.
+12. `translate`: Bir öğenin çevrilip çevrilmeyeceğini belirler.
+
+Global HTML öznitelikleri, herhangi bir HTML etiketi için geçerli olduğu için, sayfaların yapısını ve görünümünü yönetmek için çok yararlıdır.
+ -->
+
+
+ <!-- 
+    HTML'de form oluşturmak için birçok öznitelik(attribute) vardır. İşte en yaygın kullanılan form öznitelikleri:
+
+1. `action`: Form verileri sunucuya gönderildiğinde işlenecek URL'yi belirtir.
+2. `method`: Form verilerinin sunucuya gönderilme yöntemini belirtir (GET veya POST).
+3. `enctype`: Form verilerinin kodlama yöntemini belirtir.
+4. `name`: Formun adını belirtir.
+5. `target`: Form verilerinin gönderileceği hedef pencere veya çerçeve adını belirtir.
+6. `autocomplete`: Formun otomatik tamamlama özelliğinin açık veya kapalı olduğunu belirtir.
+7. `novalidate`: Form verilerinin istemci tarafında doğrulanmaması gerektiğini belirtir.
+8. `onsubmit`: Form gönderildiğinde çalıştırılacak JavaScript kodunu belirtir.
+9. `accept-charset`: Form verilerinin sunucuya gönderildiğinde kullanılacak karakter setini belirtir.
+10. `autocomplete`: Formun otomatik tamamlama özelliğinin açık veya kapalı olduğunu belirtir.
+
+Bu öznitelikler, HTML form oluşturma sürecinde önemli bir rol oynar ve formun özelliklerini belirlemeye yardımcı olur.
+  -->
