@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Auto Complete</h1>
+        <input autocomplete="country">ülke</input>
+        <br>
+        <input autocomplete="country-name"/>
+        <input autocomplete="street-address"/>
+
+        <h1>Auto Focus</h1>
+        <input autocomplete="country" autofocus/>
+
+        <h1>dirname (metin yönü arap-ing vs)</h1>
+        <label for="ad">Ad</label>
+        <input name="ad" dirname="ad.dir"/>
+        <input type="submit"/>
+
+        <h1>disabled</h1>
+        <label for="ad">Ad</label>
+        <input disabled value="Ali"/>
+
+    </form>
+
+    <h1>form scope</h1>
+
+    <form id="kayit">
+        <label for="ad">Ad</label>
+        <input name="ad"/>
+    </form>
+
+    <input type="submit" form="kayit">
+
+    <br>
+    <br>
+/***örnek iki
+    <br>
+    <br>
+
+    <form id="yenikayit">
+
+    </form>
+
+    <label for="soyad">Soyad</label>
+    <input name="soyad" form="yenikayit">
+
+    <input type="submit" form="yenikayit">
+
+
+    <h1>list attribute</h1>
+
+</body>
+</html>
