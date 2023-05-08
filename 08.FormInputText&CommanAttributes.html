@@ -51,6 +51,52 @@
 
 
     <h1>list attribute</h1>
+    <p>Favori tarayıcınızı giriniz.</p>
+    <input type="text" list="tarayicilar"/>
+    <datalist id="tarayicilar">
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="IE"></option>
+        <option value="Opera"></option>
+    </datalist>
+
+    <h1>max-min length attribute</h1>
+    <form action="">
+        <input for="ad" maxlength="10" minlength="3" required/>
+        <input type="submit">
+    </form>
+
+    <h1>placeholder attribute *label</h1>
+    <label>Ad</label>
+    <input />
+    <!-- placehodlder labelın alternatifidir -->
+    
+    <input placeholder="Ad girin"/>
+
+    <h1>readonly attribute *disabled</h1>
+    <!-- disabled attributü gri görünümlü ama bu normal -->
+    <form action="">
+        <input for="ad" readonly value="Ali"/>
+        <input type="submit">
+    </form>
+
+    <!-- readoly'de gönder dediğimizde query stringde form elementi içerisinde
+    input gönderildiğini görebiliyoruz
+    Ancak disabled attributüne sahip inputların değerleri form
+    submitinde gönderilmez (veri kaybına neden) -->
+
+    <h1>pattern attribute (regex)</h1>
+    <form action="">
+        <input for="ad" pattern="[A-Za-z]{3,10}"
+        title="min 3 max 10 karakter olacak şekilde
+        adınızı giriniz"/>
+        <input type="submit">
+    </form>
+
+    <!-- regex101.com -->
+    <!-- regexer.com -->
+
+
 
 </body>
 </html>
