@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <form>
+        <label for="e_posta">EPosta</label>
+        <input type="email" required name="e_posta" id="e_posta">
+
+        <input type="submit">
+
+        <!-- type="email" yapmak: mobil görünümde direkt olarak email klavyesi açılır -->
+
+        <!-- birden fazla email girmek için -->
+        <label for="e_posta1">EPosta</label>
+        <input type="email" multiple required name="e_posta" id="e_posta1">
+
+        <input type="submit">
+
+
+
+        <label for="e_posta1">EPosta</label>
+        <input type="email" list="epostalar" multiple required name="e_posta" id="e_posta1">
+        <datalist id="epostalar">
+            <option type="submit">c@c.com</option>
+            <option type="submit">d@d.com</option>
+            <option type="submit">e@e.com</option>
+        </datalist>
+
+        <input type="submit">
+
+
+    </form>
+</head>
+<body>
+    
+</body>
+</html>
