@@ -1,9 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Input Number</title>
 </head>
 <body>
-    
+    <form>
+        <label for="yas">Yaş</label>
+        <input type="number" step="10" required name="yas" id="yas">
+        
+        
+        <br><br>
+
+        <label for="yass">Yaşş</label>
+        <input type="number" max="100" min="25" required name="yass" id="yass">
+
+
+        <br><br>
+
+        <label for="sayi">Sayılar</label>
+        <input type="number" list="sayilar" required name="sayi" id="sayi">
+
+        <input type="submit">
+
+        <datalist id="sayilar">
+            <option>11</option>
+            <option>22</option>
+            <option>33</option>
+            <option>44</option>
+        </datalist>
+
+<!-- inputtext videosunda anlatılan attributelerin tamamı -->
+    </form>
 </body>
 </html>
