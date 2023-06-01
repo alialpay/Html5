@@ -5,5 +5,37 @@
 </head>
 <body>
     <input type="range">
+    <br><br>
+
+    <form>
+        <input class="slider" type="range" name="test"
+         value="25" min="25" max="75" step="5" >
+        <br>
+        <input type="submit">
+    </form>
+
+    <br><br>
+
+    <form>
+        <input class="slider" type="range" name="test"
+         value="25" min="25" max="75" step="5" list="sayilar" >
+        <br>
+        <input type="submit">
+    </form>
+    <br><br>
+    
+    <datalist id="sayilar">
+        <option value="25"></option>
+        <option value="30"></option>
+        <option value="35"></option>
+        <option value="40"></option>
+        <option value="45"></option>
+        <option value="50"></option>
+        <option value="55"></option>
+        <option value="60"></option>
+        <option value="65"></option>
+        <option value="70"></option>
+        <option value="75"></option>
+    </datalist>
 </body>
 </html>
