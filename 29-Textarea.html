@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Textarea</title>
+</head>
+<body>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <br><br><br>
+
+    <form>
+        <textarea autofocus minlength="10" maxlength="50"
+        placeholder="ürün hakkında yorum giriniz"
+        required name="yorum"></textarea>
+        <input type="submit">
+        <!-- disabled hiç bir şey submitlemez -->
+        <!-- readonly varsayılan ne varsa submitler -->
+    </form>
+    <br><br><br>
+
+    <form id="yorumalani">
+        <input type="submit">
+    </form>
+
+    <textarea autofocus minlength="10" maxlength="50"
+        placeholder="ürün hakkında yorum giriniz"
+        required name="yorum" form="yorumalani"
+        autocomplete="street-address" 
+        wrap="hard"
+        rows="10"
+        cols="50"></textarea>
+
+        <!-- textarea için özel attribute'ler -->
+        <!-- wrap "soft-hard-off" -->
+        <!-- rows ve cols -->
+        <!-- gerçek hayatta karşılığı çok yok -->
+
+        <!-- css ile boyutlandırma -->
+        <!-- horizontal yatayda -->
+        <!-- none ölçeklendirmeyi kapatma -->
+        <style>
+            textarea{
+                resize: vertical;
+            }
+        </style>
+
+</body>
+</html>
