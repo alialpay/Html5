@@ -10,10 +10,39 @@
         <label for="ad">Ad</label>
         <input name="ad">
 
-        <input type="submit" subm="http://www.google.com" value="Gönder">
+        <input type="submit" formaction="http://www.google.com" value="Gönder">
         <button type="submit" value="1453"><strong><i>Gönder Button</i></strong></button>
 
     </form>
+<hr>
+
+<h1>Reset</h1>
+
+    <form>
+        <label for="ad">Ad</label>
+        <input name="ad">
+
+        <input type="reset" value="Temizle">
+        <button type="reset">Temizle Button</button>
+
+    </form>
+<hr>
+
+
+    <h1>Button</h1>
+    <input type="button" value="Verileri Al" 
+    onclick="verileriGetir()">
+<br><br>
+    <button onclick="verileriGetir()">Verileri Al Button</button>
+
+    <script>
+        function verileriGetir() {
+            //sunucu tarafında işlemler yapılacak
+
+            alert("Veriler başarıyla listelendi")
+        }
+    </script>
+    <!-- sonuçta iki buton da aynı -->
 
 </body>
 </html>
