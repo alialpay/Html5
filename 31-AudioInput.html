@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio</title>
+</head>
+    <body onload="baslangic()"> 
+        <!-- html elementlerinin eventleri genelde -on eki ile başlar -->
+        <!-- src ile .mp3 ses dosyası kullanılabilir -->
+        <audio controls id="oynatici">
+            <source src="">
+        </audio>
+        <script>
+            function baslangic(){
+                alert("hello")
+                var audio = document.getElementById("oynatici")
+                console.log(audio)
+            }
+        </script>
+    </body>
+</html>
